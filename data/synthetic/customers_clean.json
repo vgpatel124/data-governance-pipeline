@@ -1,0 +1,42 @@
+[
+  {
+    "customer_id": "C00100",
+    "name": "Rushil Din",
+    "email": "batrayash@example.com",
+    "phone": "6231557108",
+    "pan": "QGXDL2208J",
+    "city": "Sirsa"
+  },
+  {
+    "customer_id": "C00101",
+    "name": "Robert Rajagopalan",
+    "email": "pratta@example.org",
+    "phone": "7099296439",
+    "pan": "WCJJH6083A",
+    "city": "Aligarh"
+  },
+  {
+    "customer_id": "C00102",
+    "name": "Theodore Goda",
+    "email": "jbedi@example.org",
+    "phone": "6978972821",
+    "pan": "GTTRD0607B",
+    "city": "Sirsa"
+  },
+  {
+    "customer_id": "C00103",
+    "name": "Ucchal Wali",
+    "email": "saanvi98@example.com",
+    "phone": "8702711595",
+    "pan": "XVGVM8731C",
+    "city": "Kozhikode"
+  },
+  {
+    "customer_id": "C00104",
+    "name": "Shivani Lad",
+    "email": "aradhanaverma@example.com",
+    "phone": "7726638503",
+    "pan": "GDJTG3636P",
+    "city": "Panipat"
+  }
+]

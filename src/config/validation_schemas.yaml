@@ -1,0 +1,33 @@
+# Quality validation rules, keyed by caller-supplied dataset_type.
+# required_fields: must be present and non-null/non-empty (None, "", and
+#                  whitespace-only values fail).
+# format_rules: optional regex (full match) applied to the string form of a field
+#               when the field is present.
+#
+# Identifier fields (customer_id, product_id, order_id, ...) intentionally have
+# NO format rule: any non-empty value is a valid identifier (P001, SKU-12345,
+# PROD-ABC-001, ITEM_XYZ_99, 12345, ORD-2026-001, ...). Their only check is
+# required_fields. Add a format_rules entry for an ID field only when a
+# dataset explicitly documents that ID format.
+
+customer_records:
+  description: Structured CSV of customers (sensitive columns present).
+  required_fields: [customer_id, name, email, phone]
+  format_rules:
+    email: '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$'
+    phone: '^(\+91[\-\s]?)?[6-9]\d{9}$'
+
+product_catalog:
+  description: Structured CSV of products (no sensitive columns).
+  required_fields: [product_id, product_name, category, price]
+  format_rules:
+    price: '^\d+(\.\d{1,2})?$'
+
+documents:
+  description: >
+    Unstructured documents (PDF/image) structured by the extraction LLM into
+    {title, date, amount, parties}.
+  required_fields: [title, date, amount, parties]
+  format_rules:
+    date: '^\d{4}-\d{2}-\d{2}$'
+    amount: '^\d+(\.\d{1,2})?$'

@@ -1,0 +1,21 @@
+customer_id,name,email,phone,pan,city
+C00001,Ekavir Varkey,aryasunder@example.org,9502456442,MXUEC5638Y,Aurangabad
+C00002,Xavier Solanki,ggupta@example.org,7621024804,QFSMG6077D,Raichur
+C00003,Nirja Sibal,chaudharidarsh@example.com,9286459114,NOITL8849O,Moradabad
+C00004,Rehaan Gupta,bdey@example.org,7742267562,CHHIO1267C,Surendranagar Dudhrej
+C00005,Faqid Savant,,9454249568,TJAJT8947R,Rourkela
+C00006,Vedika Srivastava,nandinibhargava@example.org,7424367789,ZNXPR0481I,Delhi
+C00007,Alka Sha,pallavi87@example.org,9343829484,TBYFB9002A,Sagar
+C00008,Dalbir Bhat,dakshesh09@example.com,7241942369,SUEIP9593W,Howrah
+C00009,Quincy Biswas,keernetra@example.org,7066178619,UJLJN3881L,Adoni
+C00010,Finn Saini,advika35@example.org,12345,TGWVC8246M,Tenali
+C00011,Charita Shankar,elijah07@example.net,8081273872,AYCSM7664Z,Srinagar
+C00012,Yashawini Lanka,ikshitabiswas@example.org,6026354547,ISHGD1157F,Anantapuram
+C00013,Raksha Mittal,mistryhemang@example.org,7247952112,EANHZ5618P,Bhiwandi
+C00014,Nachiket Magar,shivansh53@example.net,6854410948,KBQBD5391Y,Dibrugarh
+BAD-ID,Zayan Behl,sampatharadhana@example.org,9672544893,QPTYF2611C,Thoothukudi
+C00016,Adweta Edwin,jsane@example.org,7045227746,YUQRY4569E,Aurangabad
+C00017,Balendra Pingle,qushidatta@example.org,6075894434,HOLPX7602V,Bharatpur
+C00018,Ishita Kade,harshilpandya@example.net,6962074691,PQMCJ3683W,Udupi
+C00019,Warjas Gaba,nitarabakshi@example.org,9298543394,NZROK1376Y,Bulandshahr
+C00020,Amara Dutta,rajabalvan@example.com,6259461962,EOOCZ9418P,Kollam

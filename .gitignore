@@ -1,0 +1,19 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+.env
+data/uploads/*
+!data/uploads/.gitkeep
+# Runtime databases and their WAL/shared-memory sidecars
+data/*.db*
+data/*.duckdb*
+
+.DS_Store

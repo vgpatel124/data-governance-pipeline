@@ -1,0 +1,41 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "api",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "DB_PATH=/private/tmp/claude-501/-Users-vrajpatel-Desktop-data-governance-pipeline/de1ff75e-bf36-4f0a-ace5-9b69769751ff/scratchpad/v2_pipeline.db",
+        "DB_CHECKPOINT_PATH=/private/tmp/claude-501/-Users-vrajpatel-Desktop-data-governance-pipeline/de1ff75e-bf36-4f0a-ace5-9b69769751ff/scratchpad/v2_ckpt.db",
+        "DB_GOVERNED_PATH=/private/tmp/claude-501/-Users-vrajpatel-Desktop-data-governance-pipeline/de1ff75e-bf36-4f0a-ace5-9b69769751ff/scratchpad/v2_governed.duckdb",
+        "UPLOAD_DIR=/private/tmp/claude-501/-Users-vrajpatel-Desktop-data-governance-pipeline/de1ff75e-bf36-4f0a-ace5-9b69769751ff/scratchpad/v2_uploads",
+        "uv",
+        "run",
+        "uvicorn",
+        "src.api.main:app",
+        "--port",
+        "8010"
+      ],
+      "port": 8010
+    },
+    {
+      "name": "dashboard",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "API_URL=http://localhost:8010",
+        "uv",
+        "run",
+        "streamlit",
+        "run",
+        "src/dashboard/app.py",
+        "--server.headless",
+        "true",
+        "--server.port",
+        "8510",
+        "--browser.gatherUsageStats",
+        "false"
+      ],
+      "port": 8510
+    }
+  ]
+}
