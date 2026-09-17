@@ -6,7 +6,6 @@ Documents go in (CSV, JSON, PDF, images). The pipeline validates them, blocks pr
 
 Built with LangGraph, FastAPI, DuckDB, and Streamlit. Raw content and raw PII are never persisted, logged, or traced.
 
-Stage-by-stage build log, including every design decision and trade-off: [PROGRESS.md](PROGRESS.md).
 
 ---
 
